@@ -181,18 +181,19 @@ body {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg.png) no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1600px auto;
 }
 
 .hero-title {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 30px auto;
   width: 696px;
   color: var(--body-color-basic);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.06em;
@@ -494,10 +495,6 @@ body {
   text-decoration: none;
 }
 
-.features {
-  box-sizing: border-box;
-  box-shadow: 0 0 1px #888;
-}
 
 .features-descr {
   padding: 20px 24px;
@@ -514,7 +511,15 @@ body {
 }
 
 .card {
+  display: block;
+  box-shadow: 0 0 1px #888;
   text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .menu {
@@ -524,11 +529,6 @@ body {
   color: var(--main-color-text);
   letter-spacing: 0.03em;
 }
-
-
-
-
-
 
 /* footer */
 

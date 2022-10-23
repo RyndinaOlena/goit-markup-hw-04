@@ -131,7 +131,8 @@ body {
   align-items: center;
 }
 
-.contact-link:hover .contact-icon {
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
   fill: var(--secondary-color-text);
 
 }
@@ -184,7 +185,8 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 1600px auto;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -216,12 +218,15 @@ body {
 }
 
 /* <!-- Чим ми займаємося --> */
+.work-section {
+  padding: 94px 0 0 0;
+}
 
 .work {
   display: flex;
   gap: 30px;
   margin: 0;
-  padding: 94px 0 0 0;
+  padding: 0;
   justify-content: space-between;
   line-height: 1.2;
   color: var(--title-text-color);
@@ -247,7 +252,9 @@ body {
 }
 
 .work-preview {
-  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -263,7 +270,7 @@ body {
 /* Приклади */
 .examples-title {
   padding: 0 0 50px 0;
-  margin: 0;
+  margin: 0 0 0 50px;
   font-size: 36px;
   Line-height: 1.2;
   letter-spacing: 0.03em;
@@ -286,6 +293,10 @@ body {
 
 .examples-list li:last-child {
   margin-right: 0;
+}
+
+.examples-img {
+  display: block;
 }
 
 /* < !-- Наша команда --> */
@@ -412,6 +423,7 @@ body {
 
 .clients-picture {
   display: flex;
+  margin: 0;
   justify-content: space-between;
   align-items: center;
   list-style: none;
@@ -419,23 +431,26 @@ body {
 }
 
 .clients-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 172px;
+  height: 92px;
+
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+
 
 }
 
 .clients-descr {
   display: flex;
+
 }
 
 .clients-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 16px 32px;
-  width: 172px;
-  height: 92px;
+  width: 106px;
+  height: 60px;
   fill: var(--icon-color);
 }
 
@@ -456,7 +471,7 @@ body {
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .menu-button {
@@ -491,6 +506,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
+  margin: 0;
   list-style-type: none;
   text-decoration: none;
 }
@@ -598,6 +614,7 @@ body {
 
 .enjoy {
   margin: 0 0 20px 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -607,6 +624,7 @@ body {
 }
 
 .footer-list-nav {
+  gap: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
